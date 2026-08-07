@@ -1,9 +1,10 @@
 // =============================
 // OUR LITTLE UNIVERSE
-// script.js - PART 1
+// script.js
+// PART 1
 // =============================
 
-const pages = document.querySelectorAll(".page");
+const pages=document.querySelectorAll(".page");
 
 function showPage(pageId){
 
@@ -25,7 +26,9 @@ behavior:"smooth"
 
 }
 
-// Loading Screen
+// =============================
+// LOADING
+// =============================
 
 window.addEventListener("load",()=>{
 
@@ -39,7 +42,9 @@ showPage("lockscreen");
 
 });
 
-// Clock
+// =============================
+// CLOCK
+// =============================
 
 const clock=document.getElementById("clock");
 
@@ -53,7 +58,11 @@ let h=now.getHours();
 
 let m=now.getMinutes();
 
-if(m<10)m="0"+m;
+if(m<10){
+
+m="0"+m;
+
+}
 
 clock.textContent=h+":"+m;
 
@@ -65,17 +74,17 @@ updateClock();
 
 setInterval(updateClock,1000);
 
-// Unlock
+// =============================
+// BUTTONS
+// =============================
 
-document.getElementById("unlockBtn").onclick=function(){
+document.getElementById("unlockBtn").onclick=()=>{
 
 showPage("passcode");
 
 };
 
-// Passcode
-
-document.getElementById("passBtn").onclick=function(){
+document.getElementById("passBtn").onclick=()=>{
 
 const pass=document.getElementById("password").value.trim().toLowerCase();
 
@@ -85,61 +94,71 @@ showPage("intro");
 
 }else{
 
-document.getElementById("error").textContent="Wrong password 🤍";
+document.getElementById("error").textContent="Wrong Password 🤍";
 
 }
 
 };
 
-// Navigation
-
-document.getElementById("storyBtn").onclick=function(){
+document.getElementById("storyBtn").onclick=()=>{
 
 showPage("story");
 
 };
 
-document.getElementById("coffeeBtn").onclick=function(){
+document.getElementById("coffeeBtn").onclick=()=>{
 
 showPage("coffee");
 
 };
 
-document.getElementById("galleryBtn").onclick=function(){
+document.getElementById("galleryBtn").onclick=()=>{
 
 showPage("gallery");
 
 };
 
-document.getElementById("letterBtn").onclick=function(){
+document.getElementById("letterBtn").onclick=()=>{
 
 showPage("letter");
 
 };
 
-document.getElementById("letter2Btn").onclick=function(){
+document.getElementById("letter2Btn").onclick=()=>{
 
 showPage("letter2");
 
 };
 
-document.getElementById("verseBtn").onclick=function(){
+document.getElementById("verseBtn").onclick=()=>{
 
 showPage("verse");
 
 };
 
-document.getElementById("endingBtn").onclick=function(){
+document.getElementById("endingBtn").onclick=()=>{
 
 showPage("ending");
 
-}; 
+};
 // =============================
-// OUR LITTLE UNIVERSE
-// script.js - PART 2
+// ENTER KEY
 // =============================
 
-// Floating Hearts
+document.getElementById("password").addEventListener("keypress",(e)=>{
+
+if(e.key==="Enter"){
+
+document.getElementById("passBtn").click();
+
+}
+
+});
+
+// =============================
+// FLOATING HEARTS
+// =============================
+
 setInterval(()=>{
 
 const heart=document.createElement("div");
@@ -164,7 +183,10 @@ heart.remove();
 
 },900);
 
-// Falling Petals
+// =============================
+// FALLING PETALS
+// =============================
+
 setInterval(()=>{
 
 const petal=document.createElement("div");
@@ -189,23 +211,30 @@ petal.remove();
 
 },1200);
 
-// Enter key for passcode
-document.getElementById("password").addEventListener("keypress",function(e){
+// =============================
+// IMAGE SETTINGS
+// =============================
 
-if(e.key==="Enter"){
-
-document.getElementById("passBtn").click();
-
-}
-
-});
-
-// Disable image dragging
 document.querySelectorAll("img").forEach(img=>{
 
 img.draggable=false;
 
+img.setAttribute("loading","lazy");
+
 });
 
-// Console Message
-console.log("☕ Welcome to Our Little Universe 🤍");
+// =============================
+// CONSOLE
+// =============================
+
+console.clear();
+
+console.log("☕ Our Little Universe Loaded");
+
+console.log("🤍 Made with love");
+
+console.log("🌸 Welcome");
+
+// =============================
+// END
+// =============================
