@@ -1,1 +1,383 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Our Little Universe</title><link rel='stylesheet' href='style.css'></head><body><div class='container'><h1>☕ Our Little Universe 🤍</h1><p>This is the starter file for our scrapbook project.</p><button id='startBtn'>Begin Our Story</button><div id='content' class='hidden'><h2>From your.crush</h2><p>Our full scrapbook story, gallery, coffee moments, and letter will be added here.</p></div></div><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little Universe 🤍</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="loadingScreen">
+
+<div class="coffee">
+
+☕
+
+</div>
+
+<h1>Our Little Universe</h1>
+
+<p id="loadingText">
+
+Brewing coffee...
+
+</p>
+
+<div class="loader">
+
+<div></div>
+
+</div>
+
+</div>
+
+<section id="lockscreen" class="page active">
+
+<div class="glass">
+
+<div class="time">
+
+<h1 id="clock">12:00</h1>
+
+<p id="date">Friday</p>
+
+</div>
+
+<div class="lockHeart">
+
+🤍
+
+</div>
+
+<p class="swipe">
+
+Tap to Continue
+
+</p>
+
+<button id="unlockBtn">
+
+Unlock
+
+</button>
+
+</div>
+
+</section>
+
+<section id="passcode" class="page">
+
+<div class="glass">
+
+<h2>
+
+🔒 Enter Passcode
+
+</h2>
+
+<p>
+
+Hint:
+
+Our favorite color 💕
+
+</p>
+
+<input
+
+type="password"
+
+id="password"
+
+placeholder="Enter password"
+
+>
+
+<button id="passBtn">
+
+Unlock Story
+
+</button>
+
+<p id="error"></p>
+
+</div>
+
+</section>
+
+<section id="intro" class="page">
+
+<div class="introCard">
+
+<h1>
+
+Our Little Universe
+
+</h1>
+
+<h3>
+
+Every beautiful story...
+
+starts with one random hello.
+
+</h3>
+
+<div class="line"></div>
+
+<p>
+
+📍 Litmatch
+
+</p>
+
+<p>
+
+📍 Cagayan Valley ❤️ Nueva Ecija
+
+</p>
+
+<p>
+
+☕
+
+Coffee became our little tradition.
+
+</p>
+
+<button id="storyBtn">
+
+Begin Our Story
+
+</button>
+
+</div>
+
+</section>
+
+<section id="story" class="page">
+
+<div class="storyCard">
+
+<h1>
+
+Our Story
+
+</h1>
+
+<p>
+
+Who would've thought...
+
+that one random night on Litmatch...
+
+would introduce me to someone
+
+living hundreds of kilometers away.
+
+</p>
+
+<p>
+
+You...
+
+from Cagayan Valley.
+
+</p>
+
+<p>
+
+Me...
+
+from Nueva Ecija.
+
+</p>
+
+<p>
+
+Different places.
+
+Different lives.
+
+Yet somehow...
+
+the same conversation
+
+found us.
+
+</p>
+
+<p>
+
+When we first talked...
+
+I never imagined
+
+you would become
+
+one of my favorite people
+
+to receive notifications from.
+
+</p>
+
+<p>
+
+I met you
+
+during one of your hardest days.
+
+</p>
+
+<p>
+
+I don't know
+
+if I ever said
+
+the right words.
+
+</p>
+
+<p>
+
+But if
+
+my presence
+
+made your heart
+
+a little lighter...
+
+then
+
+I'm thankful.
+
+</p>
+
+<p>
+
+Because
+
+sometimes
+
+people don't need
+
+someone
+
+to solve everything.
+
+</p>
+
+<p>
+
+Sometimes...
+
+they only need
+
+someone
+
+who chooses
+
+to stay.
+
+</p>
+
+<button id="coffeeBtn">
+
+Continue ☕
+
+</button>
+
+</div>
+
+</section>
+
+<section id="coffee" class="page">
+
+<div class="coffeePage">
+
+<h1>
+
+Coffee Memories
+
+</h1>
+
+<p>
+
+We both love coffee.
+
+Funny isn't it?
+
+</p>
+
+<p>
+
+We haven't shared
+
+a coffee table yet.
+
+</p>
+
+<p>
+
+We haven't argued
+
+about who pays.
+
+</p>
+
+<p>
+
+We haven't laughed
+
+over one cup together.
+
+</p>
+
+<p>
+
+But somehow...
+
+coffee always reminds me of you.
+
+</p>
+
+<div class="coffeePhoto">
+
+<img src="images/coffee.jpg">
+
+</div>
+
+<p class="caption">
+
+Maybe someday...
+
+we'll stop sending
+
+coffee pictures
+
+and finally
+
+drink one together.
+
+</p>
+
+<button id="galleryBtn">
+
+Next ❤️
+
+</button>
+
+</div>
+
+</section>
