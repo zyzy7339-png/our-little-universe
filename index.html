@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Our Little Universe 🤍</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
@@ -16,7 +21,9 @@
 
 <body>
 
-<div id="loadingScreen">
+<!-- LOADING -->
+
+<div id="loading">
 
 <div class="coffee">
 
@@ -24,17 +31,287 @@
 
 </div>
 
-<h1>Our Little Universe</h1>
+<h1>
 
-<p id="loadingText">
+Our Little Universe
 
-Brewing coffee...
+</h1>
+
+<p>
+
+Brewing our memories...
 
 </p>
 
 <div class="loader">
 
-<div></div>
+<div class="progress"></div>
+
+</div>
+
+</div>
+
+<!-- LOCK SCREEN -->
+
+<section id="lockscreen" class="page active">
+
+<div class="glass">
+
+<h1 id="clock">
+
+12:00
+
+</h1>
+
+<p id="today">
+
+Friday
+
+</p>
+
+<div class="heart">
+
+🤍
+
+</div>
+
+<button id="unlockBtn">
+
+Unlock
+
+</button>
+
+</div>
+
+</section>
+
+<!-- PASSCODE -->
+
+<section id="passcode" class="page">
+
+<div class="glass">
+
+<h2>
+
+Enter Passcode 🔒
+
+</h2>
+
+<p>
+
+Hint:
+
+Our favorite color.
+
+</p>
+
+<input
+
+id="password"
+
+type="password"
+
+placeholder="Enter here">
+
+<button id="passBtn">
+
+Continue
+
+</button>
+
+<p id="error"></p>
+
+</div>
+
+</section>
+
+<!-- INTRO -->
+
+<section id="intro" class="page">
+
+<div class="card">
+
+<h1>
+
+Our Little Universe
+
+</h1>
+
+<h3>
+
+Every beautiful story
+
+begins with
+
+one unexpected hello.
+
+</h3>
+
+<div class="line"></div>
+
+<p>
+
+📍 Litmatch
+
+</p>
+
+<p>
+
+📍 Nueva Ecija ❤️ Cagayan Valley
+
+</p>
+
+<p>
+
+☕
+
+Two coffee lovers.
+
+</p>
+
+<button id="storyBtn">
+
+Our Story
+
+</button>
+
+</div>
+
+</section>
+
+<!-- STORY -->
+
+<section id="story" class="page">
+
+<div class="card">
+
+<h1>
+
+Our Story
+
+</h1>
+
+<p>
+
+Who would've thought...
+
+</p>
+
+<p>
+
+A random match
+
+would become
+
+one of
+
+my favorite people.
+
+</p>
+
+<p>
+
+Different cities.
+
+Different lives.
+
+Yet somehow...
+
+our paths crossed.
+
+</p>
+
+<p>
+
+When everyone
+
+felt far away...
+
+I simply wanted
+
+to stay.
+
+</p>
+
+<p>
+
+Maybe
+
+I couldn't solve
+
+everything.
+
+But
+
+I wanted
+
+you to know
+
+you weren't alone.
+
+</p>
+
+<button id="coffeeBtn">
+
+Continue ☕
+
+</button>
+
+</div>
+
+</section>
+
+<!-- COFFEE -->
+
+<section id="coffee" class="page">
+
+<div class="card">
+
+<h1>
+
+Coffee
+
+</h1>
+
+<p>
+
+We both love coffee.
+
+</p>
+
+<p>
+
+Maybe someday...
+
+we'll stop
+
+sending coffee pictures.
+
+</p>
+
+<p>
+
+And finally
+
+drink one together.
+
+</p>
+
+<img
+
+src="images/coffee.jpg"
+
+class="coffeeImg">
+
+<button id="galleryBtn">
+
+Next ❤️
+
+</button>
+
+</div>
+
+</section><div></div>
 
 </div>
 
@@ -997,6 +1274,622 @@ and prayers.
 </section>
 
 </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- GALLERY -->
+
+<section id="gallery" class="page">
+
+<div class="card">
+
+<h1>
+
+Our Little Scrapbook
+
+</h1>
+
+<p>
+
+We may not have
+
+our first picture together...
+
+yet.
+
+</p>
+
+<p>
+
+But we already
+
+have memories
+
+worth keeping.
+
+</p>
+
+<div class="gallery">
+
+<div class="photo">
+
+<img src="images/her1.jpg" alt="You">
+
+<span>One of my favorite smiles 🤍</span>
+
+</div>
+
+<div class="photo">
+
+<img src="images/him1.jpg" alt="Him">
+
+<span>The person I silently pray for.</span>
+
+</div>
+
+<div class="photo">
+
+<img src="images/her2.jpg" alt="You">
+
+<span>Pretty, as always.</span>
+
+</div>
+
+<div class="photo">
+
+<img src="images/him2.jpg" alt="Him">
+
+<span>Thank you for staying.</span>
+
+</div>
+
+</div>
+
+<button id="letterBtn">
+
+Open My Letter 💌
+
+</button>
+
+</div>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="letter" class="page">
+
+<div class="card letter">
+
+<h1>
+
+To Someone Special ❤️
+
+</h1>
+
+<p>
+
+Hi.
+
+</p>
+
+<p>
+
+If you're reading this...
+
+thank you.
+
+Thank you
+
+for taking your time
+
+to reach
+
+this little website.
+
+</p>
+
+<p>
+
+I still can't believe
+
+that one random match
+
+on Litmatch
+
+would become
+
+one of the best things
+
+that ever happened
+
+to me.
+
+</p>
+
+<p>
+
+You came
+
+from Cagayan Valley.
+
+I came
+
+from Nueva Ecija.
+
+We were
+
+complete strangers.
+
+Yet somehow...
+
+talking to you
+
+became
+
+part of my day.
+
+</p>
+
+<p>
+
+I met you
+
+during one of
+
+your hardest moments.
+
+I don't know
+
+if I always
+
+said the right words.
+
+But I truly hoped
+
+my presence
+
+made your heart
+
+a little lighter.
+
+</p>
+
+<p>
+
+Sometimes...
+
+people don't need
+
+someone
+
+who fixes everything.
+
+Sometimes...
+
+they only need
+
+someone
+
+who chooses
+
+to stay.
+
+</p>
+
+<p>
+
+Thank you
+
+for trusting me.
+
+For every update.
+
+For every laugh.
+
+For every coffee picture.
+
+For every
+
+good morning
+
+and
+
+good night.
+
+</p>
+
+<p>
+
+Even if
+
+we're far apart...
+
+you became
+
+one of my
+
+favorite people.
+
+</p>
+
+<p>
+
+Maybe...
+
+one day...
+
+we'll stop
+
+sending coffee pictures.
+
+Maybe...
+
+we'll finally
+
+drink one together.
+
+</p>
+
+<button id="letter2Btn">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+</section>
+<!-- LETTER PART 2 -->
+
+<section id="letter2" class="page">
+
+<div class="card letter">
+
+<h1>
+
+One More Thing...
+
+🤍
+
+</h1>
+
+<p>
+
+There are days
+
+when I ask myself
+
+how someone
+
+I've never met
+
+could become
+
+this important.
+
+</p>
+
+<p>
+
+Maybe...
+
+that's what
+
+real connection is.
+
+Not measured
+
+by distance.
+
+Not measured
+
+by time.
+
+But by
+
+how peaceful
+
+someone makes
+
+your heart feel.
+
+</p>
+
+<p>
+
+I don't know
+
+what tomorrow
+
+looks like.
+
+Life changes.
+
+People get busy.
+
+Dreams grow bigger.
+
+</p>
+
+<p>
+
+But if there's
+
+one thing
+
+I truly hope...
+
+I hope
+
+you'll always remember
+
+that somewhere
+
+in Nueva Ecija...
+
+there's someone
+
+who sincerely
+
+prays
+
+for your happiness.
+
+</p>
+
+<p>
+
+Whether
+
+our story
+
+remains
+
+a beautiful friendship...
+
+or becomes
+
+something more...
+
+meeting you
+
+will always be
+
+one of
+
+my favorite chapters.
+
+</p>
+
+<p>
+
+Thank you
+
+for existing.
+
+Thank you
+
+for making
+
+ordinary days
+
+feel special.
+
+</p>
+
+<p>
+
+And if
+
+someday...
+
+our paths
+
+finally meet...
+
+I hope
+
+our first coffee
+
+will be worth
+
+all the waiting.
+
+☕
+
+</p>
+
+<p>
+
+No matter
+
+what happens...
+
+I'm grateful
+
+that one random night
+
+on Litmatch
+
+introduced me
+
+to you.
+
+</p>
+
+<h2>
+
+With love,
+
+from your.crush ❤️
+
+</h2>
+
+<button id="verseBtn">
+
+One Last Page 🌸
+
+</button>
+
+</div>
+
+</section>
+
+<!-- BIBLE VERSE -->
+
+<section id="verse" class="page">
+
+<div class="card">
+
+<h1>
+
+A Verse For You
+
+📖
+
+</h1>
+
+<p>
+
+"Two are better than one,
+
+because they have a good reward
+
+for their labor.
+
+If either of them falls,
+
+one can help the other up."
+
+</p>
+
+<h2>
+
+Ecclesiastes 4:9–10
+
+</h2>
+
+<button id="endingBtn">
+
+Finish ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ENDING -->
+
+<section id="ending" class="page">
+
+<div class="card">
+
+<h1>
+
+Our Little Universe
+
+🌸
+
+</h1>
+
+<div class="heart">
+
+🤍
+
+</div>
+
+<p>
+
+Thank you
+
+for reading
+
+my little website.
+
+</p>
+
+<p>
+
+Maybe
+
+this isn't
+
+our ending.
+
+Maybe...
+
+it's just
+
+the beginning
+
+of another chapter.
+
+</p>
+
+<p>
+
+One day...
+
+I hope
+
+we'll replace
+
+these memories
+
+with real ones.
+
+Coffee.
+
+Laughter.
+
+Pictures.
+
+Us.
+
+</p>
+
+<h2>
+
+Thank you.
+
+Always.
+
+☕
+
+</h2>
+
+<p>
+
+Made with love,
+
+patience,
+
+coffee,
+
+and prayers.
+
+</p>
+
+<p>
+
+— from your.crush ❤️
+
+</p>
+
+<button onclick="location.reload()">
+
+Start Again ↺
+
+</button>
+
+</div>
+
+</section>
 
 <script src="script.js"></script>
 
