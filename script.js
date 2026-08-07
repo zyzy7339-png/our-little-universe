@@ -236,3 +236,14 @@ console.log("Our Little Universe Loaded 🤍");
 });
 
 });
+const endingBtn = document.getElementById("endingBtn");
+
+if (endingBtn) {
+
+    endingBtn.onclick = function () {
+
+        showPage("ending");
+
+    };
+
+}
